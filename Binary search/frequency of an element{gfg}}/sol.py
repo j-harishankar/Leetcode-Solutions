@@ -1,6 +1,5 @@
 class Solution:
     def countFreq(self, arr, target):
-
         left = self.helper(target,arr,True)
         right = self.helper(target,arr,False)
         if left == -1 or right == -1:  # target not found
@@ -9,7 +8,6 @@ class Solution:
     def helper(self,target,arr,left):
         l,r = 0,len(arr)-1
         ans = -1 
-
         while l<=r:
             mid = (l+r) // 2
             if arr[mid] < target:
